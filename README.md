@@ -1,5 +1,9 @@
 # SimpleInventory - Veggie Store Management System
 
+## Demo
+
+![SimpleInventory Demo](/SimpleGroceryFrontend/assets/fix.gif)
+
 SimpleInventory is a full-stack web application designed to manage a list of vegetable products. It features a **.NET 9.0 (ASP.NET Core) Web API** backend and a simple HTML, CSS, and JavaScript frontend. This project showcases expertise in backend development with .NET, data persistence with MS-SQL (via Entity Framework Core), and considerations for cloud deployment.
 
 ## Table of Contents
