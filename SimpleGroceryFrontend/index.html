@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Veggie Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Build Your Health Eating Fresh Veggies</h1>
+            <p>Welcome to our Simple Veggie Store – your source for fresh, local produce!</p>
+            <a href="#products-section" class="btn-primary">Browse Veggies</a>
+            
+        </div>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <div class="container">
+                <h2>Welcome to Our Simple Veggie Store</h2>
+                <p>We believe in providing the freshest, high-quality vegetables sourced locally to ensure great taste and health benefits for you and your family.</p>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <img src="assets/e4f72981-ae5c-4248-b859-1bce1dd3e773.jpg" alt="Fresh Icon">
+                        <h3>Farm Fresh</h3>
+                        <p>Direct from local farms to your table.</p>
+                    </div>
+                    <div class="feature-item">
+                        <img src="assets/26205.jpg" alt="Organic Icon">
+                        <h3>Organic Quality</h3>
+                        <p>Naturally grown, free from harmful pesticides.</p>
+                    </div>
+                    <div class="feature-item">
+                        <img src="assets/red-delivery-car-deliver-express-shipping-fast-delivery-background-3d-rendering-illustration.jpg" alt="Fast Icon">
+                        <h3>Fast Delivery</h3>
+                        <p>Get your greens delivered swiftly to your doorstep.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="add-product-section container">
+            <h2>Add New Veggie Product</h2>
+            <form id="productForm">
+                <div class="form-group">
+                    <label for="productNameSelect">Select Veggie:</label>
+                    <select id="productNameSelect" required>
+                        <option value="">-- Select a vegetable --</option>
+                        <option value="Carrot">Carrot</option>
+                        <option value="Spinach">Spinach</option>
+                        <option value="Broccoli">Broccoli</option>
+                        <option value="Tomato">Tomato</option>
+                        <option value="Potato">Potato</option>
+                        <option value="Onion">Onion</option>
+                        <option value="Bell Pepper">Bell Pepper</option>
+                        <option value="Cucumber">Cucumber</option>
+                        <option value="Lettuce">Lettuce</option>
+                        <option value="Cabbage">Cabbage</option>
+                        <option value="Pumpkin">Pumpkin</option>
+                        <option value="Garlic">Garlic</option>
+                        <option value="Ginger">Ginger</option>
+                        <option value="Green Beans">Green Beans</option>
+                        <option value="Cauliflower">Cauliflower</option>
+                        <option value="Eggplant">Eggplant</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="productPrice">Price (per unit/kg):</label>
+                    <input type="number" id="productPrice" step="0.01" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="productQuantity">Quantity (in units/kg):</label>
+                    <input type="number" id="productQuantity" min="0" required>
+                </div>
+                <button type="submit" class="btn-primary">Add Product</button>
+            </form>
+        </section>
+
+        <section id="products-section" class="product-list-section container">
+            <h2>Available Veggies</h2>
+            <div id="productsContainer">
+                <p>Loading products...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Simple Veggie Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
